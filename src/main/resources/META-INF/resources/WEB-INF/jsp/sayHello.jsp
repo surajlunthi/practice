@@ -4,6 +4,6 @@
 	</head>
 	<body>
 		<h1>Working under  JSP </h1>
-		My first html page with body - JSP
+		My first html page with body - JSP ${error}
 	</body>
 </html>
