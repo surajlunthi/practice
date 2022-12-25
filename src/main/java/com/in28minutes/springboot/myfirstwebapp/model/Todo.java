@@ -1,5 +1,7 @@
 package com.in28minutes.springboot.myfirstwebapp.model;
 
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDate;
 
 
@@ -9,6 +11,7 @@ public class Todo {
     private long id;
     private String  username;
 
+    @Size(min = 10 ,message = "Atleast 10")
     private String description;
     private LocalDate targetDate;
     private boolean done;
