@@ -1,11 +1,9 @@
-package com.in28minutes.springboot.myfirstwebapp.hello;
+package com.in28minutes.springboot.myfirstwebapp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class SayHelloController {
@@ -38,7 +36,7 @@ public class SayHelloController {
 	// /src/main/resources/META-INF/resources/WEB-INF/jsp/welcome.jsp
 	// /src/main/resources/META-INF/resources/WEB-INF/jsp/login.jsp
 	// /src/main/resources/META-INF/resources/WEB-INF/jsp/todos.jsp
-	@GetMapping("/")
+	@GetMapping("say-hello-jsp")
 	public String sayHelloJsp() {
 		return "sayHello";
 	}
