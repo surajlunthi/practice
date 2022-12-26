@@ -13,7 +13,7 @@ public class LoginController {
     @Autowired
     private AuthenticateService authenticateService;
 
-    @RequestMapping(value = "login", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String loginPage() {
         return "login";
     }
